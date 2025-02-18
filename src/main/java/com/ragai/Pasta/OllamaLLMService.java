@@ -22,6 +22,8 @@ public class OllamaLLMService {
           return chatModel.call(query);
       } */
 
+    // Using post method so that we can upload images in near future
+
     public String askQuery(String query) {
         ChatResponse response = chatModel.call(
                 new Prompt(
