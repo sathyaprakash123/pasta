@@ -8,16 +8,9 @@ import org.springframework.context.annotation.Bean;
 
 public class AIConfig {
 
-    @Bean
-    VectorStore vectorStore(EmbeddingModel embeddingModel)
-    {
-        return new SimpleVectorStore(embeddingModel);
-    }
 
     @Bean
-    ChatClient chatClient(ChatClient.Builder builder)
-    {
-
+    ChatClient chatClient(ChatClient.Builder builder) {
         return builder.build();
     }
 }

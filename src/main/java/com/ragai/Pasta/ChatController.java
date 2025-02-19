@@ -1,6 +1,4 @@
 package com.ragai.Pasta;
-
-
 import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
